@@ -12,7 +12,7 @@ Ce projet est un portfolio interactif développé pour présenter mon parcours, 
 - **Expertises** : Data Science, Intelligence Artificielle (AI), Data Engineering, Analyse de Données, Agronomie.
 - **Localisation** : Yeumbeul, Keur Massar, Dakar, Sénégal.
 - **Contact** : [assanegassama1999@gmail.com](mailto:assanegassama1999@gmail.com)
-- **Portfolio en ligne** : [assanegassama.dev](https://assanegassama.dev)
+- **Portfolio en ligne** : [gassama-assane-portofolio](https://gassama-assane-portofolio.vercel.app/)
 
 ## 🛠 Technologies utilisées
 
