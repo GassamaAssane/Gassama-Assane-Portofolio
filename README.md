@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Assane Gassama - Portfolio Personnel
 
-## Getting Started
+![Assane Gassama](public/images/Profile.png)
 
-First, run the development server:
+Bienvenue sur le code source de mon portfolio professionnel. Je suis **Assane Gassama**, un **Data Scientist, AI Engineer & AgriTech**, passionné par les données et l'agronomie.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 À propos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ce projet est un portfolio interactif développé pour présenter mon parcours, mes compétences, mes certifications et mes projets. Il a été conçu de manière moderne et cinématographique avec une très grande exigence sur l'UI/UX.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 💼 Mon Profil
+- **Expertises** : Data Science, Intelligence Artificielle (AI), Data Engineering, Analyse de Données, Agronomie.
+- **Localisation** : Yeumbeul, Keur Massar, Dakar, Sénégal.
+- **Contact** : [assanegassama1999@gmail.com](mailto:assanegassama1999@gmail.com)
+- **Portfolio en ligne** : [assanegassama.dev](https://assanegassama.dev)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Technologies utilisées
 
-## Learn More
+Ce portfolio est construit avec les dernières technologies du web pour assurer une performance maximale et une expérience utilisateur fluide :
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework** : [Next.js 14](https://nextjs.org/) (App Router)
+- **UI & Styling** : [Tailwind CSS](https://tailwindcss.com/)
+- **Animations** : [Framer Motion](https://www.framer.com/motion/) & [GSAP](https://gsap.com/)
+- **Formulaire de contact** : FormSubmit (sans backend, directement lié à ma messagerie)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Lancer le projet en local
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Si vous souhaitez explorer le code en local sur votre machine, suivez ces étapes :
 
-## Deploy on Vercel
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/GassamaAssane/Gassama-Assane-Portofolio.git
+   ```
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+3. Lancez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+4. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Fait avec ❤️ par Assane Gassama.*
