@@ -63,10 +63,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/[0.04] border border-white/[0.08] backdrop-blur-md"
             >
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-              <span className="text-xs sm:text-sm font-medium text-slate-300">
-                Disponible pour de nouvelles opportunités
-              </span>
+
             </motion.div>
 
             {/* Titre principal */}
