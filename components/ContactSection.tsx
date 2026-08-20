@@ -22,12 +22,18 @@ export default function ContactSection() {
     setStatus("submitting");
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formsubmit.co/ajax/assanegassama1999@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Accept": "application/json"
         },
-        body: JSON.stringify(formState),
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          subject: formState.subject || "Nouveau message du portfolio",
+          message: formState.message
+        }),
       });
 
       if (response.ok) {
