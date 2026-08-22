@@ -189,6 +189,10 @@ export const toolsData = [
     category: "LLMs & IA Générative",
     tools: ["Gemini", "GPT", "CrewAI", "Deepseek", "Llama", "Mistral", "Nomic"],
   },
+  {
+    category: "Bureautique",
+    tools: ["Word", "Excel", "PowerPoint"],
+  },
 ];
 
 // --- Expériences professionnelles ---
@@ -278,7 +282,7 @@ export const projectsData = [
     longDescription:
       "Projet de fin d'études utilisant un système multi-agents IA pour simuler des données bancaires réalistes adaptées au Sénégal. Les agents, orchestrés via CrewAI, exploitent Gemini, Llama et Mistral pour générer des transactions bancaires fidèles au contexte local. Les données générées sont publiées en open-source sur Kaggle.",
     technologies: ["Python", "Streamlit", "CrewAI", "Groq", "Gemini", "Llama", "Mistral"],
-    github: "https://github.com/GassamaAssane",
+    github: "https://www.kaggle.com/datasets/assanegassama/donnes-bancaires-sngalaises",
     demo: "https://www.kaggle.com/datasets/assanegassama/donnes-bancaires-sngalaises",
     image: "/images/projects/bank-simulation.jpg",
     featured: true,
@@ -293,7 +297,7 @@ export const projectsData = [
     longDescription:
       "Application permettant d'interroger une base de données en posant des questions en langage naturel. Le système transforme automatiquement la question en requête SQL, exécute la requête, crée un Dashboard des résultats et fournit des recommandations stratégiques pour les décideurs.",
     technologies: ["Python", "Streamlit", "LangChain", "Gemini API", "GPT API", "SQL", "RAG", "MySQL"],
-    github: "https://github.com/GassamaAssane",
+    github: "https://github.com/GassamaAssane/blank-app",
     demo: "#",
     image: "/images/projects/insight-narrator.jpg",
     featured: true,
@@ -308,7 +312,7 @@ export const projectsData = [
     longDescription:
       "Application RAG locale permettant de dialoguer avec vos documents PDF sans aucune connexion internet. Le système utilise Deepseek comme modèle de langage et Nomic-embed-text pour l'embedding des documents, garantissant confidentialité totale des données.",
     technologies: ["Python", "Streamlit", "Deepseek", "Nomic-embed-text", "RAG"],
-    github: "https://github.com/GassamaAssane",
+    github: "https://github.com/GassamaAssane/Ollama_Rag-with-Streamlit",
     demo: "#",
     image: "/images/projects/rag-pdf.jpg",
     featured: true,

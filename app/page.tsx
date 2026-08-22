@@ -11,7 +11,6 @@ import ToolsSection from "@/components/ToolsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import CertificationsSection from "@/components/CertificationsSection";
-import PublicationsSection from "@/components/PublicationsSection";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -34,7 +33,6 @@ export default function Home() {
           <ExperienceSection />
           <ProjectsSection />
           <CertificationsSection />
-          <PublicationsSection />
           <BlogSection />
           <ContactSection />
         </main>
