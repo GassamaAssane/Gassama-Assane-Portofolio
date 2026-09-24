@@ -12,16 +12,16 @@ export default function AboutSection() {
       {/* Orbe décoratif */}
       <div className="absolute top-1/2 -right-40 w-96 h-96 rounded-full bg-indigo-600/5 blur-[140px]" />
 
-      <div className="max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="À propos de moi" subtitle="Parcours & Philosophie" />
 
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           {/* Texte à gauche (7 colonnes sur 12) */}
-          <div className="lg:col-span-7 space-y-8">
+          <div className="lg:col-span-7 space-y-6 sm:space-y-8">
             {aboutData.paragraphs.map((paragraph, i) => (
               <motion.p
                 key={i}
-                className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed font-normal text-left"
+                className="text-sm sm:text-lg md:text-xl text-slate-300 leading-relaxed font-normal text-left"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -35,26 +35,26 @@ export default function AboutSection() {
               </motion.p>
             ))}
 
-            {/* Accent visuel / Citation */}
+            {/* Accent visuel / Citation bien aérée */}
             <motion.div
-              className="flex items-center gap-5 pt-6 border-t border-white/[0.08]"
+              className="flex items-center gap-4 sm:gap-5 p-4 sm:p-6 rounded-2xl bg-white/[0.02] border border-white/[0.06] shadow-sm"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              <div className="h-14 w-1.5 rounded-full bg-gradient-to-b from-indigo-500 via-purple-500 to-cyan-400 shrink-0" />
-              <p className="text-white font-medium italic text-lg sm:text-xl font-heading leading-snug text-left">
+              <div className="h-12 sm:h-14 w-1.5 rounded-full bg-gradient-to-b from-indigo-500 via-purple-500 to-cyan-400 shrink-0" />
+              <p className="text-white font-medium italic text-sm sm:text-xl font-heading leading-snug text-left">
                 &ldquo;Transformer des masses de données brutes en décisions éclairées et à fort impact.&rdquo;
               </p>
             </motion.div>
           </div>
 
           {/* Statistiques & Domaines clés à droite (5 colonnes sur 12) */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-5 space-y-8 sm:space-y-8 mt-4 lg:mt-0">
             {/* Carte des statistiques */}
-            <GlassCard className="p-8 sm:p-10" glow>
-              <div className="grid grid-cols-2 gap-8 sm:gap-10">
+            <GlassCard className="p-6 sm:p-10" glow>
+              <div className="grid grid-cols-2 gap-5 sm:gap-10">
                 {aboutData.stats.map((stat, i) => (
                   <motion.div
                     key={stat.label}

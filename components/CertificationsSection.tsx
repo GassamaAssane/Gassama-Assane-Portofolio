@@ -11,10 +11,10 @@ export default function CertificationsSection() {
       <div className="absolute top-0 left-0 right-0 section-divider" />
       <div className="absolute bottom-1/2 -left-32 w-96 h-96 rounded-full bg-cyan-600/5 blur-[140px]" />
 
-      <div className="max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Certifications" subtitle="Accréditations & Distinctions" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {certificationsData.map((cert, idx) => (
             <motion.div
               key={cert.id}

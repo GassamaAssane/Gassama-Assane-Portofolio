@@ -9,9 +9,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#07070b] border-t border-white/[0.06] pt-16 pb-12 overflow-hidden">
-      <div className="max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+    <footer className="relative bg-[#07070b] border-t border-white/[0.06] pt-12 pb-24 sm:pt-16 sm:pb-12 overflow-hidden">
+      <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-8 sm:mb-12">
           {/* Col 1: Brand info */}
           <div className="md:col-span-2 space-y-4">
             <span className="text-2xl font-bold font-heading bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">

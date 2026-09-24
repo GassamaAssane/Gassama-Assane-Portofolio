@@ -56,56 +56,56 @@ export default function ContactSection() {
       <div className="absolute top-0 left-0 right-0 section-divider" />
       <div className="absolute top-1/2 -left-40 w-[500px] h-[500px] rounded-full bg-purple-600/10 blur-[160px]" />
 
-      <div className="max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Contactez-moi" subtitle="Démarrons un Projet Ensemble" />
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           {/* Infos de contact (50% de la largeur) */}
           <div>
-            <GlassCard className="p-8 sm:p-10 h-full flex flex-col justify-between space-y-8" glow>
+            <GlassCard className="p-6 sm:p-8 md:p-10 h-full flex flex-col justify-between space-y-6 sm:space-y-8" glow>
               <div>
-                <h3 className="text-2xl font-bold text-white font-heading mb-8 pb-4 border-b border-white/[0.08]">
+                <h3 className="text-xl sm:text-2xl font-bold text-white font-heading mb-6 pb-3 sm:mb-8 sm:pb-4 border-b border-white/[0.08]">
                   Coordonnées
                 </h3>
 
-                <div className="space-y-8">
-                  <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl shrink-0">
+                <div className="space-y-6 sm:space-y-8">
+                  <div className="flex items-center gap-4 sm:gap-5">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xl sm:text-2xl shrink-0">
                       📧
                     </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-widest font-mono mb-1">Email</div>
+                    <div className="min-w-0">
+                      <div className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest font-mono mb-1">Email</div>
                       <a
                         href={`mailto:${personalInfo.email}`}
-                        className="text-base font-semibold text-white hover:text-cyan-400 transition-colors break-all"
+                        className="text-sm sm:text-base font-semibold text-white hover:text-cyan-400 transition-colors break-all"
                       >
                         {personalInfo.email}
                       </a>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl shrink-0">
+                  <div className="flex items-center gap-4 sm:gap-5">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl sm:text-2xl shrink-0">
                       📱
                     </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-widest font-mono mb-1">Téléphone</div>
+                    <div className="min-w-0">
+                      <div className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest font-mono mb-1">Téléphone</div>
                       <a
                         href={`tel:${personalInfo.phone}`}
-                        className="text-base font-semibold text-white hover:text-cyan-400 transition-colors"
+                        className="text-sm sm:text-base font-semibold text-white hover:text-cyan-400 transition-colors"
                       >
                         {personalInfo.phone}
                       </a>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl shrink-0">
+                  <div className="flex items-center gap-4 sm:gap-5">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl sm:text-2xl shrink-0">
                       📍
                     </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-widest font-mono mb-1">Localisation</div>
-                      <div className="text-base font-semibold text-white">
+                    <div className="min-w-0">
+                      <div className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest font-mono mb-1">Localisation</div>
+                      <div className="text-sm sm:text-base font-semibold text-white">
                         {personalInfo.location}
                       </div>
                     </div>
@@ -114,7 +114,7 @@ export default function ContactSection() {
               </div>
 
               {/* Téléchargement du CV */}
-              <div className="pt-8 border-t border-white/[0.08]">
+              <div className="pt-6 sm:pt-8 border-t border-white/[0.08]">
                 <DownloadCvButton variant="contact" />
               </div>
             </GlassCard>
@@ -122,12 +122,12 @@ export default function ContactSection() {
 
           {/* Formulaire de contact (50% de la largeur) */}
           <div>
-            <GlassCard className="p-8 sm:p-10 h-full flex flex-col justify-between" glow>
-              <form onSubmit={handleSubmit} className="space-y-6 flex-1 flex flex-col justify-between">
-                <div className="space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-6">
+            <GlassCard className="p-6 sm:p-8 md:p-10 h-full flex flex-col justify-between" glow>
+              <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6 flex-1 flex flex-col justify-between">
+                <div className="space-y-4 sm:space-y-6">
+                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
-                      <label className="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2.5 font-mono">
+                      <label className="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2 font-mono">
                         Votre Nom
                       </label>
                       <input
@@ -136,12 +136,12 @@ export default function ContactSection() {
                         value={formState.name}
                         onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                         placeholder="Nom complet"
-                        className="w-full px-5 py-4 rounded-2xl bg-white/[0.03] border border-white/[0.08] text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.06] transition-all text-sm"
+                        className="w-full px-4 py-3.5 sm:px-5 sm:py-4 rounded-xl sm:rounded-2xl bg-white/[0.03] border border-white/[0.08] text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.06] transition-all text-sm"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2.5 font-mono">
+                      <label className="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2 font-mono">
                         Votre Email
                       </label>
                       <input

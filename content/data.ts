@@ -346,6 +346,18 @@ export const projectCategories = [
 export const certificationsData = [
   {
     id: 1,
+    name: "AI Fundamentals",
+    issuer: "Google",
+    platform: "Coursera",
+    date: "2026",
+    link: "https://coursera.org/verify/23PICLX6GHY4",
+    pdf: "/certificates/google-ai-fundamentals.pdf",
+    image: "/certificates/google-ai-fundamentals.png",
+    badge: "🤖",
+    featured: true,
+  },
+  {
+    id: 2,
     name: "Elements of AI",
     issuer: "University of Helsinki",
     platform: "University of Helsinki",
@@ -354,7 +366,7 @@ export const certificationsData = [
     badge: "🧠",
   },
   {
-    id: 2,
+    id: 3,
     name: "Working with Big Data",
     issuer: "Coursera Project Network",
     platform: "Coursera",
@@ -363,7 +375,7 @@ export const certificationsData = [
     badge: "📊",
   },
   {
-    id: 3,
+    id: 4,
     name: "Save time with Microsoft Excel by using ChatGPT",
     issuer: "Coursera Project Network",
     platform: "Coursera",
@@ -372,7 +384,7 @@ export const certificationsData = [
     badge: "🤖",
   },
   {
-    id: 4,
+    id: 5,
     name: "Application of Data Analysis in Business with R Programming",
     issuer: "Coursera Project Network",
     platform: "Coursera",
@@ -381,7 +393,7 @@ export const certificationsData = [
     badge: "📈",
   },
   {
-    id: 5,
+    id: 6,
     name: "Data Analyst",
     issuer: "Force N",
     platform: "Force N",
@@ -390,7 +402,7 @@ export const certificationsData = [
     badge: "🏅",
   },
   {
-    id: 6,
+    id: 7,
     name: "Artificial Intelligence",
     issuer: "Force N",
     platform: "Force N",

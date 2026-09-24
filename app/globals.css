@@ -20,11 +20,18 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
-/* --- Base --- */
+/* --- Base (Format Ordinateur / Desktop) --- */
 * {
   margin: 10px;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* --- Style dédié au format Mobile (Smartphones <= 767px) --- */
+@media (max-width: 767px) {
+  * {
+    margin: 0;
+  }
 }
 
 html {
@@ -103,12 +110,13 @@ body {
   background-clip: text;
 }
 
-/* --- Section padding aéré --- */
+/* --- Section padding format mobile --- */
 .section-padding {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
+/* --- Section padding format tablette --- */
 @media (min-width: 768px) {
   .section-padding {
     padding-top: 10rem;
@@ -116,6 +124,7 @@ body {
   }
 }
 
+/* --- Section padding format ordinateur / desktop --- */
 @media (min-width: 1024px) {
   .section-padding {
     padding-top: 12rem;

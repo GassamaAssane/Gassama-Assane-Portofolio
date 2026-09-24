@@ -47,14 +47,14 @@ const categoryIcons: Record<string, React.ReactNode> = {
 
 export default function SkillsSection() {
   return (
-    <section id="competences" className="pt-20 pb-8 md:pt-28 md:pb-12 relative">
+    <section id="competences" className="pt-16 pb-12 sm:pt-20 sm:pb-16 md:pt-28 md:pb-16 relative">
       <div className="absolute top-0 left-0 right-0 section-divider" />
       <div className="absolute bottom-1/4 -right-40 w-96 h-96 rounded-full bg-cyan-600/5 blur-[140px]" />
 
-      <div className="max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Compétences Techniques" subtitle="Niveau d'Expertise" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6 lg:gap-8">
           {skillsData.map((category, catIdx) => (
             <motion.div
               key={category.category}
@@ -67,19 +67,19 @@ export default function SkillsSection() {
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
             >
-              <GlassCard className="p-7 sm:p-8 h-full flex flex-col justify-start gap-6" glow>
+              <GlassCard className="p-6 sm:p-7 md:p-8 h-full flex flex-col justify-start gap-6" glow>
                 {/* En-tête catégorie */}
                 <div className="flex items-center gap-4 pb-4 border-b border-white/[0.08]">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
                     {categoryIcons[category.icon]}
                   </div>
-                  <h3 className="text-lg font-bold text-white font-heading leading-snug">
+                  <h3 className="text-base sm:text-lg font-bold text-white font-heading leading-snug">
                     {category.category}
                   </h3>
                 </div>
 
-                {/* Barres de compétences */}
-                <div className="space-y-4">
+                {/* Barres de compétences aérées */}
+                <div className="space-y-4 sm:space-y-5">
                   {category.skills.map((skill, skillIdx) => (
                     <div key={skill.name} className="space-y-2">
                       <div className="flex justify-between items-center text-sm">

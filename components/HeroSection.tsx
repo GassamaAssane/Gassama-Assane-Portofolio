@@ -42,7 +42,7 @@ export default function HeroSection() {
   return (
     <section
       id="accueil"
-      className="relative min-h-screen pt-36 pb-20 md:pt-44 md:pb-28 lg:pt-48 lg:pb-36 flex items-center overflow-hidden"
+      className="relative min-h-screen pt-36 pb-16 sm:pt-44 sm:pb-24 lg:pt-48 lg:pb-36 flex items-center overflow-hidden"
     >
       <ParticlesBackground />
 
@@ -51,45 +51,35 @@ export default function HeroSection() {
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-cyan-500/10 blur-[120px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-purple-600/5 blur-[160px]" />
 
-      {/* Conteneur principal avec marge minimale de 32px (px-8 sm:px-12 lg:px-16) à gauche et à droite */}
-      <div className="relative z-10 max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12 w-full">
+      {/* Conteneur principal */}
+      <div className="relative z-10 max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12 w-full">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Colonne texte (7 cols) */}
-          <div className="order-2 lg:order-1 lg:col-span-7 space-y-8">
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/[0.04] border border-white/[0.08] backdrop-blur-md"
-            >
-
-            </motion.div>
-
+          <div className="order-2 lg:order-1 lg:col-span-7 space-y-7 sm:space-y-8">
             {/* Titre principal */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="space-y-2"
+              className="space-y-3 sm:space-y-2"
             >
-              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading leading-[1.15] tracking-tight break-words">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading leading-[1.22] sm:leading-[1.15] tracking-tight break-words">
                 <span className="text-white block">Bonjour, je suis</span>
-                <span className="gradient-text block mt-1">{personalInfo.fullName}</span>
+                <span className="gradient-text block mt-1.5 sm:mt-1">{personalInfo.fullName}</span>
               </h1>
             </motion.div>
 
-            {/* Typing effect */}
+            {/* Typing effect avec encadré technologique subtil sur mobile */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="pt-1 pb-2"
+              className="py-3 px-4.5 sm:p-0 rounded-2xl bg-[#0e0e1a]/80 sm:bg-transparent border border-white/10 sm:border-0 min-h-[3.6rem] flex items-center shadow-md sm:shadow-none"
             >
-              <div className="flex items-center gap-3 text-lg sm:text-2xl md:text-3xl text-slate-200 font-heading font-semibold">
-                <span className="text-cyan-400 font-mono text-xl shrink-0">{">"}</span>
-                <span className="break-all sm:break-normal">{displayText}</span>
-                <span className="w-0.5 h-7 sm:h-8 bg-cyan-400 animate-pulse shrink-0" />
+              <div className="flex items-center gap-2.5 sm:gap-3 text-base sm:text-2xl md:text-3xl text-slate-200 font-heading font-semibold flex-wrap">
+                <span className="text-cyan-400 font-mono text-lg sm:text-xl shrink-0">{">"}</span>
+                <span className="break-words">{displayText}</span>
+                <span className="w-0.5 h-6 sm:h-8 bg-cyan-400 animate-pulse shrink-0 inline-block" />
               </div>
             </motion.div>
 
@@ -98,29 +88,27 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.6 }}
-              className="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed"
+              className="text-[15px] sm:text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed sm:leading-loose"
             >
               Je transforme les données complexes en{" "}
               <span className="text-indigo-400 font-semibold">insights stratégiques</span> et
               développe des{" "}
               <span className="text-purple-400 font-semibold">applications d&apos;IA sur-mesure</span> qui
-              résolvent des défis concrets. Autrement dit, Grâce à une maîtrise des outils analytiques et
-              des techniques d’apprentissage automatique nous développons des solutions innovantes adaptées
-              à divers secteurs (agriculture, finance, industrie, etc.).
+              résolvent des défis concrets (agriculture, finance, industrie, etc.).
             </motion.p>
 
-            {/* Badges spécialités */}
+            {/* Badges spécialités aérés */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.5 }}
-              className="flex flex-wrap gap-3 pt-2"
+              className="flex flex-wrap gap-2.5 sm:gap-3 pt-1"
             >
               {["Machine Learning", "Deep Learning", "LLM", "Computer Vision", "Data Engineering", "AgriTech"].map(
                 (badge) => (
                   <span
                     key={badge}
-                    className="px-4 py-2 text-xs font-semibold rounded-xl bg-white/[0.04] border border-white/[0.08] text-slate-300 hover:bg-white/[0.08] hover:border-indigo-500/40 hover:text-white transition-all duration-300"
+                    className="px-3.5 py-2 sm:px-4 sm:py-2 text-xs font-semibold rounded-xl bg-white/[0.04] border border-white/[0.08] text-slate-300 hover:bg-white/[0.08] hover:border-indigo-500/40 hover:text-white transition-all duration-300"
                   >
                     {badge}
                   </span>
@@ -128,16 +116,16 @@ export default function HeroSection() {
               )}
             </motion.div>
 
-            {/* CTAs avec le nouveau bouton Télécharger CV */}
+            {/* CTAs adaptés mobile et aérés */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.5 }}
-              className="flex flex-wrap items-center gap-5 pt-4"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-5 pt-4 w-full sm:w-auto"
             >
               <a
                 href={personalInfo.heroCTA.primary.href}
-                className="group inline-flex items-center gap-3 px-8 py-4 text-sm font-semibold text-white rounded-2xl bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-1"
+                className="group inline-flex items-center justify-center gap-3 px-7 py-3.5 sm:px-8 sm:py-4 text-sm font-semibold text-white rounded-2xl bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-1 text-center shrink-0"
               >
                 {personalInfo.heroCTA.primary.text}
                 <svg
@@ -155,7 +143,7 @@ export default function HeroSection() {
                 </svg>
               </a>
 
-              {/* Nouveau Bouton CV Téléchargement Ultra-Futuriste */}
+              {/* Bouton CV Visualisation + Téléchargement */}
               <DownloadCvButton variant="hero" />
             </motion.div>
 
@@ -164,7 +152,7 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.1, duration: 0.5 }}
-              className="flex items-center gap-5 pt-6"
+              className="flex items-center gap-5 pt-8 border-t border-white/[0.08]"
             >
               <span className="text-xs font-semibold text-slate-500 uppercase tracking-widest font-mono shrink-0">
                 Suivez-moi
@@ -207,17 +195,17 @@ export default function HeroSection() {
 
           {/* Colonne image (5 cols) */}
           <motion.div
-            className="order-1 lg:order-2 lg:col-span-5 flex justify-center"
+            className="order-1 lg:order-2 lg:col-span-5 flex justify-center pt-2 sm:pt-4 lg:pt-0 mb-8 sm:mb-10 lg:mb-0"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            <div className="relative my-4">
+            <div className="relative mt-3 mb-4 sm:my-4">
               {/* Cercle décoratif animé */}
               <div className="absolute -inset-6 rounded-full bg-gradient-to-r from-indigo-500/20 via-purple-500/20 to-cyan-500/20 blur-3xl animate-pulse-glow" />
 
               {/* Cercle de bordure avec gradient */}
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full p-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 shadow-2xl shadow-indigo-500/20">
+              <div className="relative w-56 h-56 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full p-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 shadow-2xl shadow-indigo-500/20">
                 <div className="w-full h-full rounded-full overflow-hidden bg-[#0a0a0f]">
                   <Image
                     src="/images/Profile.png"
@@ -230,26 +218,26 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Badges flottants autour de la photo */}
+              {/* Badges flottants autour de la photo adaptés mobile */}
               <motion.div
-                className="absolute -top-2 -right-2 px-4 py-2 rounded-xl bg-[#0f0f23]/80 border border-indigo-500/40 backdrop-blur-md shadow-xl"
-                animate={{ y: [0, -10, 0] }}
+                className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-[#0f0f23]/90 border border-indigo-500/40 backdrop-blur-md shadow-xl"
+                animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                <span className="text-xs font-bold text-indigo-300 font-mono">🧠 AI / Deep Learning</span>
+                <span className="text-[10px] sm:text-xs font-bold text-indigo-300 font-mono">🧠 AI & Deep Learning</span>
               </motion.div>
 
               <motion.div
-                className="absolute -bottom-2 -left-2 px-4 py-2 rounded-xl bg-[#0f0f23]/80 border border-cyan-500/40 backdrop-blur-md shadow-xl"
-                animate={{ y: [0, 10, 0] }}
+                className="absolute -bottom-1 -left-1 sm:-bottom-2 sm:-left-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-[#0f0f23]/90 border border-cyan-500/40 backdrop-blur-md shadow-xl"
+                animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
-                <span className="text-xs font-bold text-cyan-300 font-mono">📊 Data Engineering</span>
+                <span className="text-[10px] sm:text-xs font-bold text-cyan-300 font-mono">📊 Data Engineering</span>
               </motion.div>
 
               <motion.div
-                className="absolute top-1/2 -right-8 px-4 py-2 rounded-xl bg-[#0f0f23]/80 border border-purple-500/40 backdrop-blur-md shadow-xl"
-                animate={{ y: [0, -8, 0] }}
+                className="hidden sm:block absolute top-1/2 -right-6 px-4 py-2 rounded-xl bg-[#0f0f23]/90 border border-purple-500/40 backdrop-blur-md shadow-xl"
+                animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
               >
                 <span className="text-xs font-bold text-purple-300 font-mono">🌿 AgroTIC</span>

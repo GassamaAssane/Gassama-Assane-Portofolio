@@ -19,8 +19,8 @@ export default function GlassCard({
     <div
       className={`
         relative rounded-2xl
-        bg-white/[0.03] backdrop-blur-xl
-        border border-white/[0.06]
+        bg-[#0e0e1a]/80 sm:bg-white/[0.03] backdrop-blur-xl
+        border border-white/[0.09] sm:border-white/[0.06]
         ${hover ? "transition-all duration-500 hover:bg-white/[0.06] hover:border-white/[0.12] hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/5" : ""}
         ${glow ? "glass-glow" : ""}
         ${className}

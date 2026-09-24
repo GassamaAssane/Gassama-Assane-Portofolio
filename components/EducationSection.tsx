@@ -10,19 +10,19 @@ export default function EducationSection() {
       <div className="absolute top-0 left-0 right-0 section-divider" />
       <div className="absolute top-1/3 -left-40 w-96 h-96 rounded-full bg-purple-600/5 blur-[140px]" />
 
-      <div className="max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Parcours Académique" subtitle="Diplômes & Spécialisations" />
 
         {/* Timeline */}
         <div className="relative">
           {/* Ligne centrale */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500/50 via-purple-500/50 to-cyan-500/50 md:-translate-x-px" />
+          <div className="absolute left-3 sm:left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500/50 via-purple-500/50 to-cyan-500/50 md:-translate-x-px" />
 
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-14 sm:space-y-18 md:space-y-24">
             {educationData.map((edu, i) => (
               <motion.div
                 key={edu.id}
-                className={`relative flex flex-col md:flex-row items-start gap-10 ${
+                className={`relative flex flex-col md:flex-row items-start gap-6 md:gap-10 ${
                   i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
                 initial={{ opacity: 0, y: 50 }}
@@ -35,21 +35,21 @@ export default function EducationSection() {
                 }}
               >
                 {/* Point sur la timeline */}
-                <div className="absolute left-4 md:left-1/2 w-5 h-5 -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 border-4 border-[#0a0a0f] z-10 shadow-xl shadow-indigo-500/50" />
+                <div className="absolute left-3 sm:left-4 md:left-1/2 w-4 h-4 sm:w-5 sm:h-5 -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 border-4 border-[#0a0a0f] z-10 shadow-xl shadow-indigo-500/50" />
 
                 {/* Contenu */}
                 <div
-                  className={`ml-12 md:ml-0 md:w-[calc(50%-3rem)] ${
+                  className={`ml-7 sm:ml-12 md:ml-0 md:w-[calc(50%-3rem)] w-[calc(100%-1.75rem)] sm:w-[calc(100%-3rem)] ${
                     i % 2 === 0 ? "md:pr-6 md:text-right" : "md:pl-6"
                   }`}
                 >
                   {/* Période */}
-                  <span className="inline-block px-4 py-1.5 text-xs font-mono font-bold rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 mb-4 shadow-sm">
+                  <span className="inline-block px-4 py-1.5 text-xs font-mono font-bold rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 mb-4 shadow-sm">
                     📅 {edu.period}
                   </span>
 
                   {/* Carte */}
-                  <div className="relative rounded-3xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] p-8 md:p-10 hover:bg-white/[0.06] hover:border-white/[0.15] transition-all duration-500 group shadow-2xl">
+                  <div className="relative rounded-2xl sm:rounded-3xl bg-[#0e0e1a]/80 sm:bg-white/[0.03] backdrop-blur-xl border border-white/10 sm:border-white/[0.08] p-5 sm:p-8 md:p-10 hover:bg-white/[0.06] hover:border-white/[0.15] transition-all duration-500 group shadow-2xl">
                     {/* Reflet */}
                     <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent rounded-t-3xl" />
 
@@ -62,11 +62,11 @@ export default function EducationSection() {
                       </p>
                     </div>
 
-                    <div className="space-y-1 mb-6 text-xs sm:text-sm">
+                    <div className="space-y-1.5 mb-5 sm:mb-6 text-xs sm:text-sm">
                       <p className="text-cyan-400 font-medium flex items-center gap-2 justify-start md:justify-start">
                         🏛️ <span>{edu.institution}</span>
                       </p>
-                      <p className="text-slate-400">
+                      <p className="text-slate-400 flex items-center gap-2">
                         📍 <span>{edu.location}</span>
                       </p>
                     </div>
@@ -77,14 +77,14 @@ export default function EducationSection() {
 
                     {/* Tags */}
                     <div
-                      className={`flex flex-wrap gap-2 pt-4 border-t border-white/[0.06] ${
+                      className={`flex flex-wrap gap-2 pt-5 border-t border-white/[0.06] ${
                         i % 2 === 0 ? "md:justify-end" : ""
                       }`}
                     >
                       {edu.highlights.map((h) => (
                         <span
                           key={h}
-                          className="px-3 py-1 text-xs font-medium rounded-lg bg-white/[0.04] border border-white/[0.08] text-slate-300"
+                          className="px-3 py-1.5 text-xs font-medium rounded-xl bg-white/[0.04] border border-white/[0.08] text-slate-300"
                         >
                           {h}
                         </span>

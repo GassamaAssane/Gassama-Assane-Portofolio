@@ -40,10 +40,10 @@ export default function BlogSection() {
       <div className="absolute top-0 left-0 right-0 section-divider" />
       <div className="absolute top-1/2 -right-32 w-96 h-96 rounded-full bg-indigo-600/5 blur-[140px]" />
 
-      <div className="max-w-[1550px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Blog & Articles" subtitle="Partage de Connaissances & Tech" />
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {sampleArticles.map((article, idx) => (
             <motion.div
               key={article.id}
@@ -52,8 +52,8 @@ export default function BlogSection() {
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
-              <GlassCard className="p-8 h-full flex flex-col justify-between space-y-6" glow>
-                <div className="space-y-4">
+              <GlassCard className="p-6 sm:p-7 md:p-8 h-full flex flex-col justify-between space-y-5 sm:space-y-6" glow>
+                <div className="space-y-3.5 sm:space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-mono font-bold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-md border border-cyan-500/30">
                       {article.category}
