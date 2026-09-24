@@ -1,6 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#0a0a0f",
+};
 
 const inter = Inter({
   variable: "--font-inter",
@@ -61,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
     >
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <meta name="theme-color" content="#0a0a0f" />
       </head>
       <body className="min-h-screen bg-[#0a0a0f] text-slate-200 noise-overlay">

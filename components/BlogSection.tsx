@@ -36,9 +36,9 @@ const sampleArticles = [
 
 export default function BlogSection() {
   return (
-    <section id="blog" className="section-padding relative">
+    <section id="blog" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 section-divider" />
-      <div className="absolute top-1/2 -right-32 w-96 h-96 rounded-full bg-indigo-600/5 blur-[140px]" />
+      <div className="absolute top-1/2 -right-16 sm:-right-32 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-indigo-600/5 blur-[140px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Blog & Articles" subtitle="Partage de Connaissances & Tech" />

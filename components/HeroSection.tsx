@@ -47,9 +47,9 @@ export default function HeroSection() {
       <ParticlesBackground />
 
       {/* Orbes de lumière décoratifs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-indigo-600/10 blur-[140px] animate-pulse-glow" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-cyan-500/10 blur-[120px] animate-pulse-glow" style={{ animationDelay: "2s" }} />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-purple-600/5 blur-[160px]" />
+      <div className="absolute top-1/4 -left-32 w-64 h-64 sm:w-96 sm:h-96 rounded-full bg-indigo-600/10 blur-[140px] animate-pulse-glow pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-32 w-64 h-64 sm:w-96 sm:h-96 rounded-full bg-cyan-500/10 blur-[120px] animate-pulse-glow pointer-events-none" style={{ animationDelay: "2s" }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] sm:w-[700px] sm:h-[700px] rounded-full bg-purple-600/5 blur-[160px] pointer-events-none" />
 
       {/* Conteneur principal */}
       <div className="relative z-10 max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12 w-full">

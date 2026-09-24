@@ -6,9 +6,9 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function EducationSection() {
   return (
-    <section id="formation" className="section-padding relative">
+    <section id="formation" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 section-divider" />
-      <div className="absolute top-1/3 -left-40 w-96 h-96 rounded-full bg-purple-600/5 blur-[140px]" />
+      <div className="absolute top-1/3 -left-40 w-96 h-96 rounded-full bg-purple-600/5 blur-[140px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Parcours Académique" subtitle="Diplômes & Spécialisations" />

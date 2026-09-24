@@ -52,9 +52,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="section-padding relative">
+    <section id="contact" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 section-divider" />
-      <div className="absolute top-1/2 -left-40 w-[500px] h-[500px] rounded-full bg-purple-600/10 blur-[160px]" />
+      <div className="absolute top-1/2 -left-40 w-[500px] h-[500px] rounded-full bg-purple-600/10 blur-[160px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Contactez-moi" subtitle="Démarrons un Projet Ensemble" />

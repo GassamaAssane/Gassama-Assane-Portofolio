@@ -22,9 +22,9 @@ export default function Home() {
     <>
       {loading && <Loader onComplete={() => setLoading(false)} />}
 
-      <div className={`transition-opacity duration-700 ${loading ? "opacity-0" : "opacity-100"}`}>
+      <div className={`transition-opacity duration-700 w-full max-w-full overflow-x-hidden ${loading ? "opacity-0" : "opacity-100"}`}>
         <Navbar />
-        <main className="relative z-10">
+        <main className="relative z-10 w-full max-w-full overflow-x-hidden">
           <HeroSection />
           <AboutSection />
           <EducationSection />

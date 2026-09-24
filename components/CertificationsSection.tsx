@@ -7,9 +7,9 @@ import GlassCard from "@/components/ui/GlassCard";
 
 export default function CertificationsSection() {
   return (
-    <section id="certifications" className="section-padding relative">
+    <section id="certifications" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 section-divider" />
-      <div className="absolute bottom-1/2 -left-32 w-96 h-96 rounded-full bg-cyan-600/5 blur-[140px]" />
+      <div className="absolute bottom-1/2 -left-32 w-96 h-96 rounded-full bg-cyan-600/5 blur-[140px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Certifications" subtitle="Accréditations & Distinctions" />

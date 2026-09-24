@@ -16,9 +16,9 @@ export default function ProjectsSection() {
       : projectsData.filter((p) => p.category === selectedCategory);
 
   return (
-    <section id="projets" className="section-padding relative">
+    <section id="projets" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 section-divider" />
-      <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-indigo-600/10 blur-[160px]" />
+      <div className="absolute top-1/3 -right-20 sm:-right-40 w-72 h-72 sm:w-[500px] sm:h-[500px] rounded-full bg-indigo-600/10 blur-[160px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Projets Réalisés" subtitle="Portfolio & Cas d'Usage IA" />

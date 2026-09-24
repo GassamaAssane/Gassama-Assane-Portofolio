@@ -47,9 +47,9 @@ const categoryIcons: Record<string, React.ReactNode> = {
 
 export default function SkillsSection() {
   return (
-    <section id="competences" className="pt-16 pb-12 sm:pt-20 sm:pb-16 md:pt-28 md:pb-16 relative">
+    <section id="competences" className="pt-16 pb-12 sm:pt-20 sm:pb-16 md:pt-28 md:pb-16 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 section-divider" />
-      <div className="absolute bottom-1/4 -right-40 w-96 h-96 rounded-full bg-cyan-600/5 blur-[140px]" />
+      <div className="absolute bottom-1/4 -right-20 sm:-right-40 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-cyan-600/5 blur-[140px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Compétences Techniques" subtitle="Niveau d'Expertise" />

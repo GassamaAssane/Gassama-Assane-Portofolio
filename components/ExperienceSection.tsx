@@ -7,9 +7,9 @@ import GlassCard from "@/components/ui/GlassCard";
 
 export default function ExperienceSection() {
   return (
-    <section id="experiences" className="section-padding relative">
+    <section id="experiences" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 section-divider" />
-      <div className="absolute bottom-1/3 -right-32 w-96 h-96 rounded-full bg-purple-600/10 blur-[160px]" />
+      <div className="absolute bottom-1/3 -right-16 sm:-right-32 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-purple-600/10 blur-[160px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Expériences Professionnelles" subtitle="Missions & Impacts Métier" />

@@ -7,8 +7,8 @@ import GlassCard from "@/components/ui/GlassCard";
 
 export default function ToolsSection() {
   return (
-    <section id="outils" className="pt-12 pb-20 sm:pt-16 sm:pb-24 md:pt-20 md:pb-32 relative">
-      <div className="absolute top-1/2 -left-32 w-96 h-96 rounded-full bg-indigo-600/5 blur-[140px]" />
+    <section id="outils" className="pt-12 pb-20 sm:pt-16 sm:pb-24 md:pt-20 md:pb-32 relative overflow-hidden">
+      <div className="absolute top-1/2 -left-32 w-96 h-96 rounded-full bg-indigo-600/5 blur-[140px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="Outils & Technologies" subtitle="Stack Technique & Ecosystème" />

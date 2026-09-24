@@ -8,9 +8,9 @@ import GlassCard from "@/components/ui/GlassCard";
 
 export default function AboutSection() {
   return (
-    <section id="apropos" className="section-padding relative">
+    <section id="apropos" className="section-padding relative overflow-hidden">
       {/* Orbe décoratif */}
-      <div className="absolute top-1/2 -right-40 w-96 h-96 rounded-full bg-indigo-600/5 blur-[140px]" />
+      <div className="absolute top-1/2 -right-20 sm:-right-40 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-indigo-600/5 blur-[140px] pointer-events-none" />
 
       <div className="max-w-[1550px] mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeading title="À propos de moi" subtitle="Parcours & Philosophie" />
